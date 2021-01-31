@@ -3,6 +3,7 @@ Analog/Digital watch face for round Garmin watches. To build the watchface you n
 
 Inspiration by Honda Civic 8G dashboard
 
+<img src="/dodox1/dodoGarminWatchFace/blob/main/screenshot/Screenshot_20210130_225809.png?raw=true" alt="Screenshot_20210130_225809.png">
 
 inspiration:
 https://github.com/elp87/elp87GarminWatchFace
