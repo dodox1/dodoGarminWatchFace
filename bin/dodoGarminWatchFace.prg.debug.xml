@@ -42,171 +42,150 @@
 <entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="11" lineNum="137" pc="268436791" symbol="drawMinHand"/>
 <entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="11" lineNum="139" pc="268436805" symbol="drawMinHand"/>
 <entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="11" lineNum="140" pc="268436841" symbol="drawMinHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="147" pc="268436856" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="146" pc="268436856" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="148" pc="268436860" symbol="drawHashMarks5Minutes"/>
 <entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="149" pc="268436860" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="150" pc="268436860" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="153" pc="268436860" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="155" pc="268436896" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="156" pc="268436914" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="159" pc="268436939" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="161" pc="268436955" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="162" pc="268436971" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="164" pc="268436978" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="171" pc="268437378" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="172" pc="268437389" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="174" pc="268437428" symbol="drawHashMarks5Minutes"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="179" pc="268437456" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="182" pc="268437460" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="183" pc="268437487" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="184" pc="268437514" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="185" pc="268437541" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="186" pc="268437568" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="188" pc="268437594" symbol="drawNonCenterAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="191" pc="268437615" symbol="drawAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="192" pc="268437619" symbol="drawAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="193" pc="268437632" symbol="drawAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="194" pc="268437645" symbol="drawAngleLine"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="197" pc="268437684" symbol="drawClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="198" pc="268437688" symbol="drawClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="199" pc="268437707" symbol="drawClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="200" pc="268437726" symbol="drawClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="202" pc="268437745" symbol="drawClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="205" pc="268437772" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="206" pc="268437776" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="208" pc="268437795" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="211" pc="268437803" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="212" pc="268437830" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="213" pc="268437857" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="216" pc="268437891" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="217" pc="268437918" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="218" pc="268437945" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="221" pc="268437979" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="222" pc="268438006" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="223" pc="268438033" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="226" pc="268438067" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="227" pc="268438100" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="228" pc="268438133" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="230" pc="268438167" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="231" pc="268438193" symbol="drawNonCenterClockHand"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="234" pc="268438208" symbol="drawExtraClockFace"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="235" pc="268438212" symbol="drawExtraClockFace"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="236" pc="268438238" symbol="drawExtraClockFace"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="239" pc="268438257" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="240" pc="268438261" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="241" pc="268438297" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="243" pc="268438334" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="244" pc="268438370" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="246" pc="268438407" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="247" pc="268438455" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="249" pc="268438499" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="250" pc="268438535" symbol="drawDateBox"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="253" pc="268438578" symbol="drawHeartRate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="254" pc="268438582" symbol="drawHeartRate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="255" pc="268438605" symbol="drawHeartRate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="256" pc="268438612" symbol="drawHeartRate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="257" pc="268438648" symbol="drawHeartRate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="261" pc="268438694" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="262" pc="268438698" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="263" pc="268438715" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="264" pc="268438725" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="265" pc="268438735" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="266" pc="268438742" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="267" pc="268438749" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="268" pc="268438762" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="269" pc="268438772" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="270" pc="268438786" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="271" pc="268438797" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="273" pc="268438814" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="274" pc="268438825" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="276" pc="268438842" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="277" pc="268438850" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="279" pc="268438867" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="280" pc="268438893" symbol="drawBatteryLevel"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="284" pc="268438939" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="285" pc="268438943" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="287" pc="268438966" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="288" pc="268438973" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="289" pc="268439011" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="290" pc="268439047" symbol="drawSteps"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="294" pc="268439093" symbol="drawMyCircle"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="295" pc="268439097" symbol="drawMyCircle"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="296" pc="268439123" symbol="drawMyCircle"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="23" lineNum="301" pc="268439142" symbol="onLayout"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="23" lineNum="302" pc="268439146" symbol="onLayout"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="24" lineNum="308" pc="268439184" symbol="onShow"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="311" pc="268439189" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="312" pc="268439193" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="313" pc="268439210" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="314" pc="268439220" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="315" pc="268439230" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="316" pc="268439240" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="318" pc="268439250" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="319" pc="268439269" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="321" pc="268439288" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="322" pc="268439316" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="323" pc="268439344" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="326" pc="268439383" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="327" pc="268439419" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="330" pc="268439457" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="331" pc="268439475" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="332" pc="268439500" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="333" pc="268439510" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="334" pc="268439520" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="335" pc="268439531" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="337" pc="268439566" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="341" pc="268439611" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="344" pc="268439625" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="346" pc="268439639" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="347" pc="268439656" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="348" pc="268439692" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="350" pc="268439740" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="351" pc="268439757" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="352" pc="268439793" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="354" pc="268439857" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="355" pc="268439874" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="356" pc="268439929" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="357" pc="268439984" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="358" pc="268440039" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="359" pc="268440094" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="360" pc="268440149" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="361" pc="268440204" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="363" pc="268440259" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="366" pc="268440276" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="367" pc="268440312" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="368" pc="268440375" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="369" pc="268440444" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="370" pc="268440513" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="373" pc="268440576" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="374" pc="268440595" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="376" pc="268440620" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="380" pc="268440636" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="382" pc="268440661" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="384" pc="268440677" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="385" pc="268440713" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="391" pc="268440755" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="398" pc="268440791" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="401" pc="268440833" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="403" pc="268440875" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="411" pc="268440911" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="412" pc="268440947" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="413" pc="268441009" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="415" pc="268441069" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="417" pc="268441137" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="418" pc="268441173" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="419" pc="268441180" symbol="onUpdate"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="26" lineNum="428" pc="268441241" symbol="onHide"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="27" lineNum="431" pc="268441246" symbol="onExitSleep"/>
-<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="28" lineNum="434" pc="268441251" symbol="onEnterSleep"/>
-<entry filename="Rez" id="34" lineNum="15" pc="268441256" symbol="WatchFace"/>
-<entry filename="Rez" id="34" lineNum="17" pc="268441268" symbol="WatchFace"/>
-<entry filename="Rez" id="34" lineNum="19" pc="268441431" symbol="WatchFace"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="151" pc="268436860" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="153" pc="268436896" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="154" pc="268436914" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="155" pc="268436939" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="156" pc="268436955" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="157" pc="268436971" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="159" pc="268436978" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="166" pc="268437378" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="167" pc="268437389" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="12" lineNum="169" pc="268437428" symbol="drawHashMarks5Minutes"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="174" pc="268437456" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="175" pc="268437460" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="176" pc="268437487" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="177" pc="268437514" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="178" pc="268437541" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="179" pc="268437568" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="13" lineNum="180" pc="268437594" symbol="drawNonCenterAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="183" pc="268437615" symbol="drawAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="184" pc="268437619" symbol="drawAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="185" pc="268437632" symbol="drawAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="14" lineNum="186" pc="268437645" symbol="drawAngleLine"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="190" pc="268437684" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="191" pc="268437688" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="192" pc="268437724" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="194" pc="268437761" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="195" pc="268437797" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="197" pc="268437834" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="198" pc="268437882" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="200" pc="268437926" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="15" lineNum="201" pc="268437962" symbol="drawDateBox"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="204" pc="268438005" symbol="drawHeartRate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="205" pc="268438009" symbol="drawHeartRate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="206" pc="268438032" symbol="drawHeartRate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="207" pc="268438039" symbol="drawHeartRate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="16" lineNum="208" pc="268438075" symbol="drawHeartRate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="212" pc="268438121" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="213" pc="268438125" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="214" pc="268438142" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="215" pc="268438152" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="216" pc="268438162" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="217" pc="268438169" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="218" pc="268438176" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="219" pc="268438189" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="220" pc="268438199" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="221" pc="268438213" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="222" pc="268438224" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="224" pc="268438241" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="225" pc="268438252" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="227" pc="268438269" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="228" pc="268438277" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="230" pc="268438294" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="17" lineNum="231" pc="268438320" symbol="drawBatteryLevel"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="235" pc="268438366" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="236" pc="268438370" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="238" pc="268438393" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="239" pc="268438400" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="240" pc="268438438" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="18" lineNum="241" pc="268438474" symbol="drawSteps"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="245" pc="268438520" symbol="drawMyCircle"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="246" pc="268438524" symbol="drawMyCircle"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="19" lineNum="247" pc="268438550" symbol="drawMyCircle"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="252" pc="268438569" symbol="onLayout"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="20" lineNum="253" pc="268438573" symbol="onLayout"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="21" lineNum="259" pc="268438611" symbol="onShow"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="262" pc="268438616" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="263" pc="268438620" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="264" pc="268438637" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="265" pc="268438647" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="266" pc="268438657" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="267" pc="268438667" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="269" pc="268438677" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="270" pc="268438696" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="272" pc="268438715" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="273" pc="268438743" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="274" pc="268438771" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="277" pc="268438810" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="278" pc="268438846" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="281" pc="268438884" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="282" pc="268438902" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="283" pc="268438927" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="284" pc="268438937" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="285" pc="268438947" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="286" pc="268438958" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="288" pc="268438993" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="292" pc="268439038" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="295" pc="268439052" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="297" pc="268439066" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="298" pc="268439083" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="299" pc="268439119" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="301" pc="268439167" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="302" pc="268439184" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="303" pc="268439220" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="305" pc="268439284" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="306" pc="268439301" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="307" pc="268439356" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="308" pc="268439411" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="309" pc="268439466" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="310" pc="268439521" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="311" pc="268439576" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="312" pc="268439631" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="314" pc="268439686" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="317" pc="268439703" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="318" pc="268439739" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="319" pc="268439802" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="320" pc="268439871" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="321" pc="268439940" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="324" pc="268440003" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="325" pc="268440022" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="326" pc="268440047" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="329" pc="268440063" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="330" pc="268440088" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="332" pc="268440104" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="333" pc="268440140" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="336" pc="268440182" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="339" pc="268440218" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="342" pc="268440260" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="344" pc="268440302" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="346" pc="268440338" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="347" pc="268440374" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="348" pc="268440436" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="351" pc="268440496" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="352" pc="268440532" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="353" pc="268440600" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="354" pc="268440607" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="356" pc="268440667" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="357" pc="268440684" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="358" pc="268440695" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="22" lineNum="359" pc="268440731" symbol="onUpdate"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="23" lineNum="367" pc="268440789" symbol="onHide"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="24" lineNum="370" pc="268440794" symbol="onExitSleep"/>
+<entry filename="/data/git/dodoGarminWatchFace/source/dodoGarminWatchFaceView.mc" id="25" lineNum="373" pc="268440799" symbol="onEnterSleep"/>
+<entry filename="Rez" id="31" lineNum="15" pc="268440804" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="17" pc="268440816" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="19" pc="268440979" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
-<entry id="28" method="true" symbol="drawHeartRate"/>
+<entry id="25" method="true" symbol="drawHeartRate"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-<entry id="29" method="true" symbol="drawBatteryLevel"/>
+<entry id="26" method="true" symbol="drawBatteryLevel"/>
 <entry id="9" object="true" symbol="dodoGarminWatchFaceApp"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
@@ -225,8 +204,7 @@
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="22" method="true" symbol="drawNonCenterAngleLine"/>
-<entry id="30" method="true" symbol="drawSteps"/>
-<entry id="24" method="true" symbol="drawClockHand"/>
+<entry id="27" method="true" symbol="drawSteps"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
 <entry field="true" id="8389067" symbol="height"/>
@@ -237,7 +215,6 @@
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
-<entry id="25" method="true" symbol="drawNonCenterClockHand"/>
 <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="18" method="true" symbol="transCoords"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
@@ -245,7 +222,7 @@
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry id="31" method="true" symbol="drawMyCircle"/>
+<entry id="28" method="true" symbol="drawMyCircle"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="13" symbol="LauncherIcon"/>
@@ -263,8 +240,7 @@
 <entry id="8389347" symbol="color"/>
 <entry id="11" module="true" symbol="Layouts"/>
 <entry id="21" method="true" symbol="drawHashMarks5Minutes"/>
-<entry id="26" method="true" symbol="drawExtraClockFace"/>
-<entry id="27" method="true" symbol="drawDateBox"/>
+<entry id="24" method="true" symbol="drawDateBox"/>
 <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry id="8388635" module="true" symbol="Application"/>
@@ -319,82 +295,53 @@
 <entry arg="true" endPc="268437684" name="color" stackId="5" startPc="268437615"/>
 <entry arg="true" endPc="268437684" name="r1" stackId="3" startPc="268437615"/>
 <entry arg="true" endPc="268437684" name="angle" stackId="2" startPc="268437615"/>
-<entry endPc="268437771" name="semiHandWidth" stackId="6" startPc="268437688"/>
-<entry endPc="268437771" name="xCenter" stackId="7" startPc="268437688"/>
-<entry endPc="268437771" name="yCenter" stackId="8" startPc="268437688"/>
-<entry arg="true" endPc="268437772" name="dc" stackId="1" startPc="268437684"/>
-<entry arg="true" endPc="268437772" name="color" stackId="5" startPc="268437684"/>
-<entry arg="true" endPc="268437772" name="r" stackId="3" startPc="268437684"/>
-<entry arg="true" endPc="268437772" name="handWidth" stackId="4" startPc="268437684"/>
-<entry arg="true" endPc="268437772" name="angle" stackId="2" startPc="268437684"/>
-<entry endPc="268438207" name="x3" stackId="16" startPc="268437776"/>
-<entry endPc="268438207" name="x2" stackId="14" startPc="268437776"/>
-<entry endPc="268438207" name="x1" stackId="12" startPc="268437776"/>
-<entry endPc="268438207" name="x0" stackId="10" startPc="268437776"/>
-<entry endPc="268438207" name="y3" stackId="17" startPc="268437776"/>
-<entry endPc="268438207" name="y2" stackId="15" startPc="268437776"/>
-<entry endPc="268438207" name="coords" stackId="9" startPc="268437776"/>
-<entry endPc="268438207" name="y1" stackId="13" startPc="268437776"/>
-<entry endPc="268438207" name="y0" stackId="11" startPc="268437776"/>
-<entry endPc="268438207" name="semiHandWidth" stackId="8" startPc="268437776"/>
-<entry arg="true" endPc="268438208" name="dc" stackId="1" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="color" stackId="7" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="r" stackId="5" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="handWidth" stackId="6" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="xCenter" stackId="2" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="angle" stackId="4" startPc="268437772"/>
-<entry arg="true" endPc="268438208" name="yCenter" stackId="3" startPc="268437772"/>
-<entry arg="true" endPc="268438257" name="x" stackId="2" startPc="268438208"/>
-<entry arg="true" endPc="268438257" name="dc" stackId="1" startPc="268438208"/>
-<entry arg="true" endPc="268438257" name="color" stackId="5" startPc="268438208"/>
-<entry arg="true" endPc="268438257" name="r" stackId="4" startPc="268438208"/>
-<entry arg="true" endPc="268438257" name="y" stackId="3" startPc="268438208"/>
-<entry endPc="268438577" name="dateStr" stackId="5" startPc="268438261"/>
-<entry endPc="268438577" name="info" stackId="4" startPc="268438261"/>
-<entry arg="true" endPc="268438578" name="x" stackId="2" startPc="268438257"/>
-<entry arg="true" endPc="268438578" name="dc" stackId="1" startPc="268438257"/>
-<entry arg="true" endPc="268438578" name="y" stackId="3" startPc="268438257"/>
-<entry endPc="268438693" name="value" stackId="4" startPc="268438582"/>
-<entry arg="true" endPc="268438694" name="x" stackId="2" startPc="268438578"/>
-<entry arg="true" endPc="268438694" name="dc" stackId="1" startPc="268438578"/>
-<entry arg="true" endPc="268438694" name="y" stackId="3" startPc="268438578"/>
-<entry endPc="268438935" name="color" stackId="9" startPc="268438749"/>
-<entry endPc="268438935" name="batteryValue" stackId="8" startPc="268438749"/>
-<entry endPc="268438938" name="batteryLevel" stackId="6" startPc="268438698"/>
-<entry endPc="268438938" name="charging" stackId="5" startPc="268438698"/>
-<entry endPc="268438938" name="stats" stackId="4" startPc="268438698"/>
-<entry endPc="268438938" name="batteryText" stackId="7" startPc="268438698"/>
-<entry arg="true" endPc="268438939" name="x" stackId="2" startPc="268438694"/>
-<entry arg="true" endPc="268438939" name="dc" stackId="1" startPc="268438694"/>
-<entry arg="true" endPc="268438939" name="y" stackId="3" startPc="268438694"/>
-<entry endPc="268439089" name="stepsStr" stackId="5" startPc="268438973"/>
-<entry endPc="268439092" name="actsteps" stackId="4" startPc="268438943"/>
-<entry arg="true" endPc="268439093" name="x" stackId="2" startPc="268438939"/>
-<entry arg="true" endPc="268439093" name="dc" stackId="1" startPc="268438939"/>
-<entry arg="true" endPc="268439093" name="y" stackId="3" startPc="268438939"/>
-<entry arg="true" endPc="268439142" name="x" stackId="2" startPc="268439093"/>
-<entry arg="true" endPc="268439142" name="dc" stackId="1" startPc="268439093"/>
-<entry arg="true" endPc="268439142" name="color" stackId="5" startPc="268439093"/>
-<entry arg="true" endPc="268439142" name="r" stackId="4" startPc="268439093"/>
-<entry arg="true" endPc="268439142" name="y" stackId="3" startPc="268439093"/>
-<entry arg="true" endPc="268439184" name="dc" stackId="1" startPc="268439142"/>
-<entry endPc="268439598" name="r2" stackId="10" startPc="268439475"/>
-<entry endPc="268439598" name="r1" stackId="9" startPc="268439475"/>
-<entry endPc="268439598" name="angle" stackId="8" startPc="268439475"/>
-<entry endPc="268439611" name="i" stackId="7" startPc="268439475"/>
-<entry endPc="268441240" name="timeString" stackId="14" startPc="268439193"/>
-<entry endPc="268441240" name="titleString" stackId="15" startPc="268439193"/>
-<entry endPc="268441240" name="minAngle" stackId="13" startPc="268439193"/>
-<entry endPc="268441240" name="clockTime" stackId="2" startPc="268439193"/>
-<entry endPc="268441240" name="hour12" stackId="11" startPc="268439193"/>
-<entry endPc="268441240" name="hour" stackId="4" startPc="268439193"/>
-<entry endPc="268441240" name="min" stackId="5" startPc="268439193"/>
-<entry endPc="268441240" name="sec" stackId="6" startPc="268439193"/>
-<entry endPc="268441240" name="hourAngle" stackId="12" startPc="268439193"/>
-<entry endPc="268441240" name="day" stackId="3" startPc="268439193"/>
-<entry arg="true" endPc="268441241" name="dc" stackId="1" startPc="268439189"/>
-<entry endPc="268441448" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268441268"/>
-<entry arg="true" endPc="268441449" name="dc" stackId="1" startPc="268441256"/>
+<entry endPc="268438004" name="dateStr" stackId="5" startPc="268437688"/>
+<entry endPc="268438004" name="info" stackId="4" startPc="268437688"/>
+<entry arg="true" endPc="268438005" name="x" stackId="2" startPc="268437684"/>
+<entry arg="true" endPc="268438005" name="dc" stackId="1" startPc="268437684"/>
+<entry arg="true" endPc="268438005" name="y" stackId="3" startPc="268437684"/>
+<entry endPc="268438120" name="value" stackId="4" startPc="268438009"/>
+<entry arg="true" endPc="268438121" name="x" stackId="2" startPc="268438005"/>
+<entry arg="true" endPc="268438121" name="dc" stackId="1" startPc="268438005"/>
+<entry arg="true" endPc="268438121" name="y" stackId="3" startPc="268438005"/>
+<entry endPc="268438362" name="color" stackId="9" startPc="268438176"/>
+<entry endPc="268438362" name="batteryValue" stackId="8" startPc="268438176"/>
+<entry endPc="268438365" name="batteryLevel" stackId="6" startPc="268438125"/>
+<entry endPc="268438365" name="charging" stackId="5" startPc="268438125"/>
+<entry endPc="268438365" name="stats" stackId="4" startPc="268438125"/>
+<entry endPc="268438365" name="batteryText" stackId="7" startPc="268438125"/>
+<entry arg="true" endPc="268438366" name="x" stackId="2" startPc="268438121"/>
+<entry arg="true" endPc="268438366" name="dc" stackId="1" startPc="268438121"/>
+<entry arg="true" endPc="268438366" name="y" stackId="3" startPc="268438121"/>
+<entry endPc="268438516" name="stepsStr" stackId="5" startPc="268438400"/>
+<entry endPc="268438519" name="actsteps" stackId="4" startPc="268438370"/>
+<entry arg="true" endPc="268438520" name="x" stackId="2" startPc="268438366"/>
+<entry arg="true" endPc="268438520" name="dc" stackId="1" startPc="268438366"/>
+<entry arg="true" endPc="268438520" name="y" stackId="3" startPc="268438366"/>
+<entry arg="true" endPc="268438569" name="x" stackId="2" startPc="268438520"/>
+<entry arg="true" endPc="268438569" name="dc" stackId="1" startPc="268438520"/>
+<entry arg="true" endPc="268438569" name="color" stackId="5" startPc="268438520"/>
+<entry arg="true" endPc="268438569" name="r" stackId="4" startPc="268438520"/>
+<entry arg="true" endPc="268438569" name="y" stackId="3" startPc="268438520"/>
+<entry arg="true" endPc="268438611" name="dc" stackId="1" startPc="268438569"/>
+<entry endPc="268439025" name="r2" stackId="10" startPc="268438902"/>
+<entry endPc="268439025" name="r1" stackId="9" startPc="268438902"/>
+<entry endPc="268439025" name="angle" stackId="8" startPc="268438902"/>
+<entry endPc="268439038" name="i" stackId="7" startPc="268438902"/>
+<entry endPc="268440788" name="timeString" stackId="14" startPc="268438620"/>
+<entry endPc="268440788" name="titleString" stackId="15" startPc="268438620"/>
+<entry endPc="268440788" name="deviceSettings" stackId="16" startPc="268438620"/>
+<entry endPc="268440788" name="minAngle" stackId="13" startPc="268438620"/>
+<entry endPc="268440788" name="clockTime" stackId="2" startPc="268438620"/>
+<entry endPc="268440788" name="hour12" stackId="11" startPc="268438620"/>
+<entry endPc="268440788" name="hour" stackId="4" startPc="268438620"/>
+<entry endPc="268440788" name="min" stackId="5" startPc="268438620"/>
+<entry endPc="268440788" name="sec" stackId="6" startPc="268438620"/>
+<entry endPc="268440788" name="hourAngle" stackId="12" startPc="268438620"/>
+<entry endPc="268440788" name="day" stackId="3" startPc="268438620"/>
+<entry arg="true" endPc="268440789" name="dc" stackId="1" startPc="268438616"/>
+<entry endPc="268440996" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268440816"/>
+<entry arg="true" endPc="268440997" name="dc" stackId="1" startPc="268440804"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
@@ -461,32 +408,6 @@
 <param id="angle"/>
 <param id="r1"/>
 <param id="r2"/>
-<param id="color"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="drawClockHand" parent="dodoGarminWatchFaceView">
-<param id="dc"/>
-<param id="angle"/>
-<param id="r"/>
-<param id="handWidth"/>
-<param id="color"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="drawNonCenterClockHand" parent="dodoGarminWatchFaceView">
-<param id="dc"/>
-<param id="xCenter"/>
-<param id="yCenter"/>
-<param id="angle"/>
-<param id="r"/>
-<param id="handWidth"/>
-<param id="color"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="drawExtraClockFace" parent="dodoGarminWatchFaceView">
-<param id="dc"/>
-<param id="x"/>
-<param id="y"/>
-<param id="r"/>
 <param id="color"/>
 <documentation/>
 </functionEntry>

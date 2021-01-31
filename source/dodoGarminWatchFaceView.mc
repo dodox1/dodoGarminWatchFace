@@ -139,7 +139,6 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
     dc.fillPolygon(arrow2);
 
-    //return arrow;
   }
 
   // Draw the hash mark symbols on the watch-------------------------------------------------------
@@ -149,16 +148,12 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     var i;
     var alpha, r1, r2, marks, thicknes;
 
-    //dc.setColor(App.getApp().getProperty("HashmarksColor"), Gfx.COLOR_TRANSPARENT);
     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
     for (var i = 0; i < 12; i++) {
-     alpha = (Math.PI / 6) * i;
-
-      //r1 = width / 2 - 12; //inside
-      r1 = (height * 0.45);
-      //r2 = width / 2 - 2; //outside
-      r2 = (height * 0.492);
+	  alpha = (Math.PI / 6) * i;
+      r1 = (height * 0.45); //inside
+      r2 = (height * 0.492); //outside
       thicknes = 0.007;
 
       marks = [
@@ -177,14 +172,11 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
   }
 
   function drawNonCenterAngleLine(dc, xCenter, yCenter, angle, r1, r2, color) {
-    //var width = dc.getWidth();
-    //var height = dc.getHeight();
     var x1 = xCenter + (Math.sin(angle) * r1);
     var y1 = yCenter - (Math.cos(angle) * r1);
     var x2 = xCenter + (Math.sin(angle) * r2);
     var y2 = yCenter - (Math.cos(angle) * r2);
     dc.setColor(color, Graphics.COLOR_BLACK);
-    //dc.setPenWidth(4);
     dc.drawLine(x1, y1, x2, y2);
   }
 
@@ -194,47 +186,6 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     drawNonCenterAngleLine(dc, (width / 2), (height / 2), angle, r1, r2, color);
   }
 
-  function drawClockHand(dc, angle, r, handWidth, color) {
-    var semiHandWidth = (handWidth - (handWidth % 2)) / 2;
-    var xCenter = dc.getWidth() / 2;
-    var yCenter = dc.getHeight() / 2;
-
-    drawNonCenterClockHand(dc, xCenter, yCenter, angle, r, handWidth, color);
-  }
-
-  function drawNonCenterClockHand(dc, xCenter, yCenter, angle, r, handWidth, color) {
-    var semiHandWidth = (handWidth - (handWidth % 2)) / 2;
-
-    var coords = new [4];
-
-    // Координаты 1-й точки у гвоздика [0]
-    var x0 = xCenter + (Math.cos(angle) * semiHandWidth);
-    var y0 = yCenter + (Math.sin(angle) * semiHandWidth);
-    coords[0] = [x0, y0];
-
-    // Координаты вершины [1]
-    var x1 = xCenter + (Math.sin(angle) * r);
-    var y1 = yCenter - (Math.cos(angle) * r);
-    coords[1] = [x1, y1];
-
-    // Координаты 2-й точки у гвоздика [2]
-    var x2 = xCenter - (Math.cos(angle) * semiHandWidth);
-    var y2 = yCenter - (Math.sin(angle) * semiHandWidth);
-    coords[2] = [x2, y2];
-
-    // Координаты хвостика
-    var x3 = xCenter - (Math.sin(angle) * r * 0.1);
-    var y3 = yCenter + (Math.cos(angle) * r * 0.1);
-    coords[3] = [x3, y3];
-
-    dc.setColor(color, Graphics.COLOR_BLACK);
-    dc.fillPolygon(coords);
-  }
-
-  function drawExtraClockFace(dc, x, y, r, color) {
-    dc.setColor(color, Graphics.COLOR_BLACK);
-    dc.drawCircle(x, y, r);
-  }
 
   function drawDateBox(dc, x, y) {
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
@@ -369,32 +320,22 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     dc.drawText((width * 0.09), (height * 0.44), Graphics.FONT_SYSTEM_XTINY, "9", Graphics.TEXT_JUSTIFY_CENTER);
     dc.drawText(center_x, (height * 0.85), Graphics.FONT_SYSTEM_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
 
-    // How to draw an hour hand
+    // Draw an hour hand
     var hour12 = hour % 12 + (min / 60.0);
     var hourAngle = (Math.PI / 6) * hour12;
-    //drawClockHand(dc, hourAngle, (width / 2) * 0.6, 15, Graphics.COLOR_WHITE);
     drawHourHand(dc, hourAngle);
-    //drawAngleLine(dc, hourAngle, 0, (width / 2) * 0.5, Graphics.COLOR_WHITE);
 
-    // How to draw the minute hand
+    // Draw the minute hand
     var minAngle = (Math.PI / 30) * min;
-    //drawClockHand(dc, minAngle, (width / 2) * 0.9, 9, Graphics.COLOR_LT_GRAY);
     drawMinHand(dc, minAngle);
 
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-    dc.fillCircle(center_x, center_y, width * 0.36);
-
-    // How to draw a second dial
-    //drawExtraClockFace(dc, (width * .5), (height * .75), (width * .15), Graphics.COLOR_DK_GRAY);
+    dc.fillCircle(center_x, center_y, width * 0.36); //clean
 
     // Draw a cell with a date
     drawDateBox(dc, center_x, (height * 0.73));
 
-    // How to draw the second hand
-    //     var secAngle = (Math.PI / 30) * sec;
-    //     drawNonCenterClockHand(dc, (width * .5), (height * .75), secAngle, (width * .15), 5, Graphics.COLOR_RED);
-
-    // How to draw a heart pulse
+    // Draw HR
     drawHeartRate(dc, (width * .35), (height * .25));
 
     // Draw the battery level
@@ -402,24 +343,22 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     drawSteps(dc, center_x, (height * .35));
 
-    // Draw a carnation in the center
-    //dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-    //dc.fillCircle(width / 2, height / 2, 3);
-
-    //        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-    //        dc.fillCircle((width * .5), (height * .75), 1);
 	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
 	var timeString = Lang.format("$1$:$2$", [hour, min.format("%02d")]);
 	dc.drawText(center_x, (height * .48), Graphics.FONT_SYSTEM_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
 
-	dc.drawLine((width * 0.20), (height * 0.45), (width * 0.8), (height * 0.45));
 
 	dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+	dc.drawLine((width * 0.20), (height * 0.45), (width * 0.8), (height * 0.45));
 	var titleString = "dodo";
 	dc.drawText(center_x, (height * .15), Graphics.FONT_XTINY, titleString, Graphics.TEXT_JUSTIFY_CENTER);
 
+	var deviceSettings = System.getDeviceSettings();
+	if (deviceSettings.phoneConnected) {
+		dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+		dc.fillCircle((width * 0.6), (height * 0.78), vpixel*4 );
+	}
 
-    //drawHouMinHand(dc, 120);
   }
 
   // Called when this View is removed from the screen. Save the
