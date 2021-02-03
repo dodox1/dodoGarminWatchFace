@@ -43,15 +43,15 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
   // @param : (DrawContext) dc; (int) angle;
   // @ret   : (Array) arrow
   // @desc  : Draw a watch hand (polygon)
-  function drawHourHand(dc, angle) {
+  function drawHand(dc, angle, hand_width, arrow_height, hand_lenght) {
     //
-    var HOUMIN_HAND_WIDTH = 30 * vpixel; // (int) Width of the hour and the minute watch hands
-    var ARROW_HEIGHT = 30 * vpixel; // (int) Arrow height of the hour and minute watch hands
-    var handLength = 80; //base
+    //var HOUMIN_HAND_WIDTH = 30 * vpixel; // (int) Width of the hour and the minute watch hands
+    //var ARROW_HEIGHT = 30 * vpixel; // (int) Arrow height of the hour and minute watch hands
+    //var handLength = 80; //base
     // What I want to draw:
     //    _
     //   / \
-    //  //^\\    ARROW_HEIGHT
+    //  //^\\    arrow_height
     // //___\\
     //--------------------
     // |     |
@@ -59,73 +59,21 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // |     |
     //-------------------- center
     // |     |
-    // |     |   TAIL_LENGTH
+    // |     |
     // +-----+
-    //  HOUMIN_HAND_WIDTH
+    //  hand_width (HOUMIN_HAND_WIDTH)
 
     // Coordinates
     var arrow = [
-      [-HOUMIN_HAND_WIDTH / 2, -handLength], //L base
-      [-(vpixel), -handLength - ARROW_HEIGHT], //L top
-      [vpixel, -handLength - ARROW_HEIGHT], //R top
-      [HOUMIN_HAND_WIDTH / 2, -handLength] //R base
+      [-hand_width / 2, -hand_lenght], //L base
+      [-(vpixel), -hand_lenght - arrow_height], //L top
+      [vpixel, -hand_lenght - arrow_height], //R top
+      [hand_width / 2, -hand_lenght] //R base
     ];
     var arrow2 = [
-      [-HOUMIN_HAND_WIDTH * 0.25, -handLength], //L base
-      [0, -handLength - (ARROW_HEIGHT) * 0.5], //top (sharp corner)
-      // [0, -handLength-(ARROW_HEIGHT)*0.5],	// R top
-      [HOUMIN_HAND_WIDTH * 0.25, -handLength] //R base
-    ];
-
-    // Transform the coordinates
-    arrow = transCoords(arrow, angle);
-    arrow2 = transCoords(arrow2, angle);
-
-    // Draw hand
-    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-    dc.fillPolygon(arrow);
-
-    dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-    dc.fillPolygon(arrow2);
-
-    //return arrow;
-  }
-  // @func  : drawMinHand
-  // @param : (DrawContext) dc; (int) angle;
-  // @ret   : (Array) arrow
-  // @desc  : Draw a watch hand (polygon)
-  function drawMinHand(dc, angle) {
-    //
-    var HOUMIN_HAND_WIDTH = 20 * vpixel; // (int) Width of the hour and the minute watch hands
-    var ARROW_HEIGHT = 35 * vpixel; // (int) Arrow height of the hour and minute watch hands
-    var handLength = 80; //base
-    // What I want to draw:
-    //    _
-    //   / \
-    //  //^\\    ARROW_HEIGHT
-    // //___\\
-    //--------------------
-    // |     |
-    // |     |   handLength
-    // |     |
-    //-------------------- center
-    // |     |
-    // |     |   TAIL_LENGTH
-    // +-----+
-    //  HOUMIN_HAND_WIDTH
-
-    // Coordinates
-    var arrow = [
-      [-HOUMIN_HAND_WIDTH / 2, -handLength], //L base
-      [-(vpixel), -handLength - ARROW_HEIGHT], //L top
-      [vpixel, -handLength - ARROW_HEIGHT], //R top
-      [HOUMIN_HAND_WIDTH / 2, -handLength] //R base
-    ];
-    var arrow2 = [
-      [-HOUMIN_HAND_WIDTH * 0.25, -handLength], //L base
-      [0, -handLength - (ARROW_HEIGHT) * 0.5], //top (sharp corner)
-      // [0, -handLength-(ARROW_HEIGHT)*0.5],	// R top
-      [HOUMIN_HAND_WIDTH * 0.25, -handLength] //R base
+      [-hand_width * 0.25, -hand_lenght], //L base
+      [0, -hand_lenght - (arrow_height) * 0.5], //top (sharp corner)
+      [hand_width * 0.25, -hand_lenght] //R base
     ];
 
     // Transform the coordinates
@@ -140,6 +88,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     dc.fillPolygon(arrow2);
 
   }
+
 
   // Draw the hash mark symbols on the watch-------------------------------------------------------
 
@@ -181,9 +130,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
   }
 
   function drawAngleLine(dc, angle, r1, r2, color) {
-    var width = dc.getWidth();
-    var height = dc.getHeight();
-    drawNonCenterAngleLine(dc, (width / 2), (height / 2), angle, r1, r2, color);
+    drawNonCenterAngleLine(dc, center_x, center_y, angle, r1, r2, color);
   }
 
 
@@ -271,7 +218,11 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     center_x = (width / 2)-1;
     center_y = (height / 2)-1;
-    vpixel = Math.round(width / 240); //virtual resolution 1 pixel
+    //vpixel = Math.round(width / 240); //virtual resolution 1 pixel
+    vpixel = ((width / 2.40)+5).toNumber().toFloat()/100; //
+    //vpixel = (((width / 2.40)+5).toNumber()); //
+
+
 
     // Fill the background with black
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
@@ -303,13 +254,16 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     dc.drawArc(center_x, center_y, (height * 0.485), Graphics.ARC_COUNTER_CLOCKWISE, 91, 180); //redline arc
 
 	dc.setPenWidth(2);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+1, 0x22AAFF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+2, 0x22AAFF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+3, 0x00AAFF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+4, 0x0066FF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+5, 0x0066FF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+6, 0x0000FF);
-	drawMyCircle(dc, center_x, center_y, (width * 0.36)+6, 0x000066);
+	var center_width =  width * 0.35;
+	drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF);
+	drawMyCircle(dc, center_x, center_y, center_width+2, 0x00AAFF);
+	drawMyCircle(dc, center_x, center_y, center_width+3, 0x0055FF);
+	drawMyCircle(dc, center_x, center_y, center_width+4, 0x0055FF);
+	drawMyCircle(dc, center_x, center_y, center_width+5, 0x0000FF);
+	drawMyCircle(dc, center_x, center_y, center_width+6, 0x0000FF);
+	drawMyCircle(dc, center_x, center_y, center_width+7, 0x0000AA);
+	drawMyCircle(dc, center_x, center_y, center_width+8, 0x0000AA);
+	drawMyCircle(dc, center_x, center_y, center_width+9, 0x0000AA);
 
 	dc.setPenWidth(1);
 
@@ -323,14 +277,17 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // Draw an hour hand
     var hour12 = hour % 12 + (min / 60.0);
     var hourAngle = (Math.PI / 6) * hour12;
-    drawHourHand(dc, hourAngle);
+    //drawHourHand(dc, hourAngle);
+    drawHand(dc, hourAngle, height* 0.123, height* 0.123, height* 0.33); //hour hand
+    //drawHand(dc, angle, 20, 35, 80); //minute hand
 
     // Draw the minute hand
     var minAngle = (Math.PI / 30) * min;
-    drawMinHand(dc, minAngle);
+    //drawMinHand(dc, minAngle);
+	drawHand(dc, minAngle, height* 0.08, height* 0.15, height* 0.33); //minute hand
 
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-    dc.fillCircle(center_x, center_y, width * 0.36); //clean
+    dc.fillCircle(center_x, center_y, center_width); //clean
 
     // Draw a cell with a date
     drawDateBox(dc, center_x, (height * 0.73));
@@ -343,9 +300,9 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     drawSteps(dc, center_x, (height * .35));
 
-	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 	var timeString = Lang.format("$1$:$2$", [hour, min.format("%02d")]);
-	dc.drawText(center_x, (height * .48), Graphics.FONT_SYSTEM_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+	dc.drawText(center_x, (height * .48), Graphics.FONT_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
 
 
 	dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -355,7 +312,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
 	var deviceSettings = System.getDeviceSettings();
 	if (deviceSettings.phoneConnected) {
-		dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.fillCircle((width * 0.6), (height * 0.78), vpixel*4 );
 	}
 
