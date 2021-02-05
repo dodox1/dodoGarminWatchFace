@@ -7,6 +7,9 @@ Inspiration by Honda Civic 8G dashboard
 
 ![Preview](screenshot/Screenshot_20210130_225809.png)
 
+#
+
+* [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) 
 
 Code inspiration:
 

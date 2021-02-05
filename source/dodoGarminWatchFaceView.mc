@@ -39,29 +39,18 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     return coords;
   }
 
-  // @func  : drawHourHand
-  // @param : (DrawContext) dc; (int) angle;
-  // @ret   : (Array) arrow
-  // @desc  : Draw a watch hand (polygon)
   function drawHand(dc, angle, hand_width, arrow_height, hand_lenght) {
     //
-    //var HOUMIN_HAND_WIDTH = 30 * vpixel; // (int) Width of the hour and the minute watch hands
-    //var ARROW_HEIGHT = 30 * vpixel; // (int) Arrow height of the hour and minute watch hands
-    //var handLength = 80; //base
     // What I want to draw:
     //    _
     //   / \
     //  //^\\    arrow_height
     // //___\\
-    //--------------------
     // |     |
     // |     |   handLength
     // |     |
-    //-------------------- center
-    // |     |
-    // |     |
     // +-----+
-    //  hand_width (HOUMIN_HAND_WIDTH)
+    //  hand_width
 
     // Coordinates
     var arrow = [
@@ -89,9 +78,6 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
   }
 
-
-  // Draw the hash mark symbols on the watch-------------------------------------------------------
-
   function drawHashMarks5Minutes(dc) {
     //thick 5-Minutes marks
     var i;
@@ -101,9 +87,9 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     for (var i = 0; i < 12; i++) {
 	  alpha = (Math.PI / 6) * i;
-      r1 = (height * 0.45); //inside
+      r1 = (height * 0.445); //inside
       r2 = (height * 0.492); //outside
-      thicknes = 0.007;
+      thicknes = 0.01;
 
       marks = [
         [center_x + r1 * Math.sin(alpha - thicknes), center_y - r1 * Math.cos(alpha - thicknes)],
@@ -150,10 +136,13 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
   function drawHeartRate(dc, x, y) {
     var value = Activity.getActivityInfo().currentHeartRate;
+
     if (value != null) {
-      dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+      //dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+      dc.setColor(0xFF0055, Graphics.COLOR_TRANSPARENT);
       dc.drawText(x, y, Graphics.FONT_MEDIUM, value, Graphics.TEXT_JUSTIFY_CENTER);
     }
+   // return value;
   }
 
   function drawBatteryLevel(dc, x, y) {
@@ -161,6 +150,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     var charging = stats.charging;
     var batteryLevel = stats.battery;
     var batteryText = "N/A";
+
     if (batteryLevel != null) {
       var batteryValue = batteryLevel.toNumber();
       batteryText = batteryValue + "%";
@@ -194,7 +184,6 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
       dc.drawCircle(x, y, r);
   }
 
-
   // Load your resources here
   function onLayout(dc) {
     setLayout(Rez.Layouts.WatchFace(dc));
@@ -220,13 +209,23 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     center_y = (height / 2)-1;
     //vpixel = Math.round(width / 240); //virtual resolution 1 pixel
     vpixel = ((width / 2.40)+5).toNumber().toFloat()/100; //
-    //vpixel = (((width / 2.40)+5).toNumber()); //
-
 
 
     // Fill the background with black
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     dc.fillRectangle(0, 0, width, height);
+    /*var myText;
+
+            myText = new WatchUi.Text({
+            :text=>"Hello World!",
+            :color=>Graphics.COLOR_WHITE,
+            :font=>Graphics.FONT_LARGE,
+            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+        });
+        //myText.locY = myText.locY * 1.5;
+        myText.draw(dc);
+	*/
 
     // Draw serifs
     for (var i = 0; i < 120; i++) {
@@ -240,32 +239,47 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 		}
 	}
 
+	//Draw 5 min. hash marks
     drawHashMarks5Minutes(dc);
-
-
-    dc.setAntiAlias(true); //draw antialiassed graphics
 
     dc.setPenWidth(4);
     dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
     dc.drawCircle(center_x, center_y, (height / 2)-1);  //outline circle
 
-    dc.setPenWidth(2);
-    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
-    dc.drawArc(center_x, center_y, (height * 0.485), Graphics.ARC_COUNTER_CLOCKWISE, 91, 180); //redline arc
-
+    dc.setPenWidth(3);
+//    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+    dc.setColor(0xFF0000, Graphics.COLOR_BLACK);
+    dc.drawArc(center_x, center_y, (height * 0.482), Graphics.ARC_COUNTER_CLOCKWISE, 91, 180); //redline arc
+	//Draw background
 	dc.setPenWidth(2);
 	var center_width =  width * 0.35;
-	drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF);
-	drawMyCircle(dc, center_x, center_y, center_width+2, 0x00AAFF);
-	drawMyCircle(dc, center_x, center_y, center_width+3, 0x0055FF);
-	drawMyCircle(dc, center_x, center_y, center_width+4, 0x0055FF);
-	drawMyCircle(dc, center_x, center_y, center_width+5, 0x0000FF);
-	drawMyCircle(dc, center_x, center_y, center_width+6, 0x0000FF);
-	drawMyCircle(dc, center_x, center_y, center_width+7, 0x0000AA);
-	drawMyCircle(dc, center_x, center_y, center_width+8, 0x0000AA);
-	drawMyCircle(dc, center_x, center_y, center_width+9, 0x0000AA);
-
+	var hr_value = Activity.getActivityInfo().currentHeartRate;
+	if ( hr_value == 130 ) {
+		drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF);
+		drawMyCircle(dc, center_x, center_y, center_width+2, 0x0055FF);
+		drawMyCircle(dc, center_x, center_y, center_width+3, 0x0055FF);
+		drawMyCircle(dc, center_x, center_y, center_width+4, 0x0055FF);
+		drawMyCircle(dc, center_x, center_y, center_width+5, 0x0000FF);
+		drawMyCircle(dc, center_x, center_y, center_width+6, 0x0000FF);
+		drawMyCircle(dc, center_x, center_y, center_width+7, 0x0000AA);
+		drawMyCircle(dc, center_x, center_y, center_width+8, 0x0000AA);
+		drawMyCircle(dc, center_x, center_y, center_width+9, 0x000055);
+	} else {
+		drawMyCircle(dc, center_x, center_y, center_width+1, 0xFFAA00);
+		drawMyCircle(dc, center_x, center_y, center_width+2, 0xFF5500);
+		drawMyCircle(dc, center_x, center_y, center_width+3, 0xFF5500);
+		drawMyCircle(dc, center_x, center_y, center_width+4, 0xFF0000);
+		drawMyCircle(dc, center_x, center_y, center_width+5, 0xFF0000);
+		drawMyCircle(dc, center_x, center_y, center_width+6, 0xAA0000);
+		drawMyCircle(dc, center_x, center_y, center_width+7, 0xAA0000);
+		drawMyCircle(dc, center_x, center_y, center_width+8, 0x550000);
+		drawMyCircle(dc, center_x, center_y, center_width+9, 0x550000);
+	}
 	dc.setPenWidth(1);
+
+	if ( dc has :setAntiAlias ) {
+		dc.setAntiAlias(true); //draw antialiassed graphics
+	}
 
     // Write number marks
     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -277,17 +291,16 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // Draw an hour hand
     var hour12 = hour % 12 + (min / 60.0);
     var hourAngle = (Math.PI / 6) * hour12;
-    //drawHourHand(dc, hourAngle);
+
     drawHand(dc, hourAngle, height* 0.123, height* 0.123, height* 0.33); //hour hand
-    //drawHand(dc, angle, 20, 35, 80); //minute hand
 
     // Draw the minute hand
     var minAngle = (Math.PI / 30) * min;
-    //drawMinHand(dc, minAngle);
+
 	drawHand(dc, minAngle, height* 0.08, height* 0.15, height* 0.33); //minute hand
 
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-    dc.fillCircle(center_x, center_y, center_width); //clean
+    dc.fillCircle(center_x, center_y, center_width); //clean surface in the center
 
     // Draw a cell with a date
     drawDateBox(dc, center_x, (height * 0.73));
@@ -298,23 +311,32 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // Draw the battery level
     drawBatteryLevel(dc, (width * .65), (height * .25));
 
+	// Draw steps
     drawSteps(dc, center_x, (height * .35));
 
-	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-	var timeString = Lang.format("$1$:$2$", [hour, min.format("%02d")]);
-	dc.drawText(center_x, (height * .48), Graphics.FONT_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
-
-
+	// Draw line
 	dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+	// Draw my logo
+
 	dc.drawLine((width * 0.20), (height * 0.45), (width * 0.8), (height * 0.45));
 	var titleString = "dodo";
 	dc.drawText(center_x, (height * .15), Graphics.FONT_XTINY, titleString, Graphics.TEXT_JUSTIFY_CENTER);
 
+	// Draw BT link state
 	var deviceSettings = System.getDeviceSettings();
 	if (deviceSettings.phoneConnected) {
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.fillCircle((width * 0.6), (height * 0.78), vpixel*4 );
 	}
+	// Draw digital time
+	var timeString = Lang.format("$1$:$2$", [hour, min.format("%02d")]);
+
+//	var view = View.findDrawableById("TimeLabel");
+//	view.setText(timeString);
+//	View.onUpdate(dc);
+
+	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+	dc.drawText(center_x, (height * .48), Graphics.FONT_SYSTEM_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
 
   }
 
