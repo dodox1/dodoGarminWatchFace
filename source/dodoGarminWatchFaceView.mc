@@ -9,12 +9,13 @@ using Toybox.ActivityMonitor;
 class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
   // the x coordinate for the center
-  var center_x;
+  hidden var center_x;
   // the y coordinate for the center
-  var center_y;
-  var width;
-  var height;
-  var vpixel; // minimal virtual resolution
+  hidden var center_y;
+  hidden var width;
+  hidden var height;
+  hidden var vpixel; // minimal virtual resolution
+  hidden var heartRate;
 
   function initialize() {
     WatchFace.initialize();
@@ -78,14 +79,27 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
   }
 
-  function drawHashMarks5Minutes(dc) {
+  function drawHashMarks(dc) {
     //thick 5-Minutes marks
     var i;
-    var alpha, r1, r2, marks, thicknes;
+    var alpha, r1, r2, marks, thicknes, angle;
 
     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
-    for (var i = 0; i < 12; i++) {
+    // Draw serifs
+    for (i = 0; i < 120; i++) {
+      angle = (Math.PI / 60) * i;
+      r1 = center_x;
+      r2 = r1 * 0.89;
+      	if(i > 90) {
+	  		drawAngleLine(dc, angle, r1, r2, Graphics.COLOR_RED);
+		} else {
+      		drawAngleLine(dc, angle, r1, r2, Graphics.COLOR_WHITE);
+		}
+	}
+
+	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    for (i = 0; i < 12; i++) {
 	  alpha = (Math.PI / 6) * i;
       r1 = (height * 0.445); //inside
       r2 = (height * 0.492); //outside
@@ -184,6 +198,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
       dc.drawCircle(x, y, r);
   }
 
+  //===================================================================================
   // Load your resources here
   function onLayout(dc) {
     setLayout(Rez.Layouts.WatchFace(dc));
@@ -214,48 +229,25 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // Fill the background with black
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     dc.fillRectangle(0, 0, width, height);
-    /*var myText;
 
-            myText = new WatchUi.Text({
-            :text=>"Hello World!",
-            :color=>Graphics.COLOR_WHITE,
-            :font=>Graphics.FONT_LARGE,
-            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-        });
-        //myText.locY = myText.locY * 1.5;
-        myText.draw(dc);
-	*/
-
-    // Draw serifs
-    for (var i = 0; i < 120; i++) {
-      var angle = (Math.PI / 60) * i;
-      var r1 = center_x;
-      var r2 = r1 * 0.89;
-      	if(i > 90) {
-	  		drawAngleLine(dc, angle, r1, r2, Graphics.COLOR_RED);
-		} else {
-      		drawAngleLine(dc, angle, r1, r2, Graphics.COLOR_WHITE);
-		}
-	}
-
-	//Draw 5 min. hash marks
-    drawHashMarks5Minutes(dc);
+	//Draw serifs
+    drawHashMarks(dc);
 
     dc.setPenWidth(4);
     dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
     dc.drawCircle(center_x, center_y, (height / 2)-1);  //outline circle
 
     dc.setPenWidth(3);
-//    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
-    dc.setColor(0xFF0000, Graphics.COLOR_BLACK);
+    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+//    dc.setColor(0xFF0000, Graphics.COLOR_BLACK);
     dc.drawArc(center_x, center_y, (height * 0.482), Graphics.ARC_COUNTER_CLOCKWISE, 91, 180); //redline arc
 	//Draw background
 	dc.setPenWidth(2);
-	var center_width =  width * 0.35;
-	var hr_value = Activity.getActivityInfo().currentHeartRate;
-	if ( hr_value == 130 ) {
-		drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF);
+	var center_width =  width * 0.35; //center ring radius
+	heartRate = Activity.getActivityInfo().currentHeartRate;
+	if ( heartRate == null ) { heartRate=0;  }
+	if ( heartRate < 146 ) {
+		drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF); //blue
 		drawMyCircle(dc, center_x, center_y, center_width+2, 0x0055FF);
 		drawMyCircle(dc, center_x, center_y, center_width+3, 0x0055FF);
 		drawMyCircle(dc, center_x, center_y, center_width+4, 0x0055FF);
@@ -265,7 +257,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 		drawMyCircle(dc, center_x, center_y, center_width+8, 0x0000AA);
 		drawMyCircle(dc, center_x, center_y, center_width+9, 0x000055);
 	} else {
-		drawMyCircle(dc, center_x, center_y, center_width+1, 0xFFAA00);
+		drawMyCircle(dc, center_x, center_y, center_width+1, 0xFFAA00); //typeR
 		drawMyCircle(dc, center_x, center_y, center_width+2, 0xFF5500);
 		drawMyCircle(dc, center_x, center_y, center_width+3, 0xFF5500);
 		drawMyCircle(dc, center_x, center_y, center_width+4, 0xFF0000);
@@ -283,10 +275,10 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     // Write number marks
     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-    dc.drawText(center_x, (height * 0.03), Graphics.FONT_SYSTEM_XTINY, "12", Graphics.TEXT_JUSTIFY_CENTER);
-    dc.drawText((width * 0.9), (height * 0.44), Graphics.FONT_SYSTEM_XTINY, "3", Graphics.TEXT_JUSTIFY_CENTER);
-    dc.drawText((width * 0.09), (height * 0.44), Graphics.FONT_SYSTEM_XTINY, "9", Graphics.TEXT_JUSTIFY_CENTER);
-    dc.drawText(center_x, (height * 0.85), Graphics.FONT_SYSTEM_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
+    dc.drawText(center_x, (height * 0.03), Graphics.FONT_SYSTEM_TINY, "12", Graphics.TEXT_JUSTIFY_CENTER);
+    dc.drawText((width * 0.9), (height * 0.44), Graphics.FONT_SYSTEM_TINY, "3", Graphics.TEXT_JUSTIFY_CENTER);
+    dc.drawText((width * 0.09), (height * 0.44), Graphics.FONT_SYSTEM_TINY, "9", Graphics.TEXT_JUSTIFY_CENTER);
+    dc.drawText(center_x, (height * 0.84), Graphics.FONT_SYSTEM_TINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
 
     // Draw an hour hand
     var hour12 = hour % 12 + (min / 60.0);
@@ -334,10 +326,19 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 //	var view = View.findDrawableById("TimeLabel");
 //	view.setText(timeString);
 //	View.onUpdate(dc);
-
+	//use24hclock = System.getDeviceSettings().is24Hour;
+	//var fy = dc.getFontHeight(Graphics.FONT_NUMBER_HOT);
 	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-	dc.drawText(center_x, (height * .48), Graphics.FONT_SYSTEM_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
-
+	//var mySettings = System.getDeviceSettings();
+	//FONT_NUMBER_MEDIUM = 6
+	//FONT_NUMBER_HOT
+	if ( height <= 240 ) {
+	var fy = dc.getFontHeight(Graphics.FONT_SYSTEM_NUMBER_HOT);
+	dc.drawText(center_x, (height * .7)-fy, Graphics.FONT_SYSTEM_NUMBER_HOT, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+	} else {
+	var fy = dc.getFontHeight(Graphics.FONT_NUMBER_MEDIUM);
+	dc.drawText(center_x, (height * .7)-fy, Graphics.FONT_NUMBER_MEDIUM, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+	}
   }
 
   // Called when this View is removed from the screen. Save the
