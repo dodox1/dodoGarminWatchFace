@@ -18,3 +18,5 @@ https://github.com/elp87/elp87GarminWatchFace
 https://github.com/OliverHannover/Formula_1
 
 https://github.com/lievsim/swissMilitaryGarminWatchFace
+
+id 5ca9ba3f17a9435f841abb4f78cb6132

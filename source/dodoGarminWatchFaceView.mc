@@ -5,6 +5,7 @@ using Toybox.Lang;
 using Toybox.Time.Gregorian;
 using Toybox.Activity;
 using Toybox.ActivityMonitor;
+using Toybox.Application;
 
 class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
@@ -16,6 +17,9 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
   hidden var height;
   hidden var vpixel; // minimal virtual resolution
   hidden var heartRate;
+  hidden var heartRateTypeR;
+  var save_min;
+
 
   function initialize() {
     WatchFace.initialize();
@@ -90,6 +94,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     for (i = 0; i < 120; i++) {
       angle = (Math.PI / 60) * i;
       r1 = center_x;
+      //r1 = center_x-4;
       r2 = r1 * 0.89;
       	if(i > 90) {
 	  		drawAngleLine(dc, angle, r1, r2, Graphics.COLOR_RED);
@@ -101,8 +106,13 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
     for (i = 0; i < 12; i++) {
 	  alpha = (Math.PI / 6) * i;
-      r1 = (height * 0.445); //inside
+      //r1 = (height * 0.44); //inside
+      //if (i == 0 or i == 3 or i == 6 or i == 9 ) {
+       r1 = (height * 0.445); //inside - smaller
+      //}
       r2 = (height * 0.492); //outside
+     // r2 = center_x-4; //outside
+     //r1 = r2 * 0.89;
       thicknes = 0.01;
 
       marks = [
@@ -153,7 +163,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
     if (value != null) {
       //dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-      dc.setColor(0xFF0055, Graphics.COLOR_TRANSPARENT);
+      dc.setColor(0xFF0055, Graphics.COLOR_BLACK);
       dc.drawText(x, y, Graphics.FONT_MEDIUM, value, Graphics.TEXT_JUSTIFY_CENTER);
     }
    // return value;
@@ -207,15 +217,21 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
   // Called when this View is brought to the foreground. Restore
   // the state of this View and prepare it to be shown. This includes
   // loading resources into memory.
-  function onShow() {}
+  function onShow() {
+  	//save_min = null; //force redraw
+  	//WatchUi.requestUpdate();
+  }
 
   // Update the view
   function onUpdate(dc) {
+  //System.println("onUpdate()");
     var clockTime = System.getClockTime();
     var day = clockTime.hour;
     var hour = clockTime.hour;
     var min = clockTime.min;
     var sec = clockTime.sec;
+    var HR_threshold = (Application.getApp().getProperty("HR_threshold"));
+    var Logo = (Application.getApp().getProperty("Logo"));
 
     width = dc.getWidth();
     height = dc.getHeight();
@@ -225,7 +241,9 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     //vpixel = Math.round(width / 240); //virtual resolution 1 pixel
     vpixel = ((width / 2.40)+5).toNumber().toFloat()/100; //
 
-
+	if ( save_min != min ) { //one minute update =======================================================
+	//System.println("onUpdate()1min");
+	//save_min = min; //comment out to disable 1minute update saving
     // Fill the background with black
     dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     dc.fillRectangle(0, 0, width, height);
@@ -246,7 +264,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 	var center_width =  width * 0.35; //center ring radius
 	heartRate = Activity.getActivityInfo().currentHeartRate;
 	if ( heartRate == null ) { heartRate=0;  }
-	if ( heartRate < 146 ) {
+	if ( heartRate < HR_threshold ) {
 		drawMyCircle(dc, center_x, center_y, center_width+1, 0x00AAFF); //blue
 		drawMyCircle(dc, center_x, center_y, center_width+2, 0x0055FF);
 		drawMyCircle(dc, center_x, center_y, center_width+3, 0x0055FF);
@@ -284,7 +302,7 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     var hour12 = hour % 12 + (min / 60.0);
     var hourAngle = (Math.PI / 6) * hour12;
 
-    drawHand(dc, hourAngle, height* 0.123, height* 0.123, height* 0.33); //hour hand
+    drawHand(dc, hourAngle, height* 0.123, height* 0.113, height* 0.33); //hour hand
 
     // Draw the minute hand
     var minAngle = (Math.PI / 30) * min;
@@ -297,9 +315,6 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
     // Draw a cell with a date
     drawDateBox(dc, center_x, (height * 0.73));
 
-    // Draw HR
-    drawHeartRate(dc, (width * .35), (height * .25));
-
     // Draw the battery level
     drawBatteryLevel(dc, (width * .65), (height * .25));
 
@@ -308,18 +323,29 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 
 	// Draw line
 	dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-	// Draw my logo
 
+	// Draw my logo
 	dc.drawLine((width * 0.20), (height * 0.45), (width * 0.8), (height * 0.45));
-	var titleString = "dodo";
-	dc.drawText(center_x, (height * .15), Graphics.FONT_XTINY, titleString, Graphics.TEXT_JUSTIFY_CENTER);
+	//var titleString = "dodo";
+	dc.drawText(center_x, (height * .15), Graphics.FONT_XTINY, Logo, Graphics.TEXT_JUSTIFY_CENTER);
+
+	} //one minute update =============================================================================
+	//System.println("onUpdate()1sec");
+
+    // Draw HR
+    drawHeartRate(dc, (width * .35), (height * .25));
 
 	// Draw BT link state
 	var deviceSettings = System.getDeviceSettings();
 	if (deviceSettings.phoneConnected) {
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.fillCircle((width * 0.6), (height * 0.78), vpixel*4 );
+	} else {
+		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+		dc.fillCircle((width * 0.6), (height * 0.78), vpixel*4 );
 	}
+
+
 	// Draw digital time
 	var timeString = Lang.format("$1$:$2$", [hour, min.format("%02d")]);
 
@@ -339,17 +365,33 @@ class dodoGarminWatchFaceView extends WatchUi.WatchFace {
 	var fy = dc.getFontHeight(Graphics.FONT_NUMBER_MEDIUM);
 	dc.drawText(center_x, (height * .7)-fy, Graphics.FONT_NUMBER_MEDIUM, timeString, Graphics.TEXT_JUSTIFY_CENTER);
 	}
+
   }
+
+  function onPartialUpdate( dc ) {
+	//onUpdate(dc);
+  }
+
+
 
   // Called when this View is removed from the screen. Save the
   // state of this View here. This includes freeing resources from
   // memory.
-  function onHide() {}
+  function onHide() {
+  	//save_min = null; //force redraw
+  }
 
   // The user has just looked at their watch. Timers and animations may be started here.
-  function onExitSleep() {}
+  function onExitSleep() {
+  	//save_min = null; //force redraw
+  	//WatchUi.requestUpdate();
+  }
+
 
   // Terminate any active timers and prepare for slow updates.
-  function onEnterSleep() {}
+  function onEnterSleep() {
+  	//WatchUi.requestUpdate();
+  }
+
 
 }

@@ -1,3 +1,5 @@
 <strings>
     <string id="AppName">dodoGarminWatchFace</string>
+	<string id="Logo">Logo</string>
+    <string id="HR_threshold">HR threshold</string>
 </strings>

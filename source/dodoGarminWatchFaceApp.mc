@@ -1,4 +1,5 @@
 using Toybox.Application;
+using Toybox.WatchUi;
 
 class dodoGarminWatchFaceApp extends Application.AppBase {
 
@@ -17,6 +18,10 @@ class dodoGarminWatchFaceApp extends Application.AppBase {
     // Return the initial view of your application here
     function getInitialView() {
         return [ new dodoGarminWatchFaceView() ];
+    }
+    // New app settings have been received so trigger a UI update
+    function onSettingsChanged() {
+        WatchUi.requestUpdate();
     }
 
 }
